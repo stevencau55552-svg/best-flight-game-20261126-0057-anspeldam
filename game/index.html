@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sky Courier: Coral Run — a tiny island flight game</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #0b2233; height: 100%; overflow: hidden; }
+  #sky-courier-canvas { display: block; width: 100vw; height: 100vh; background: #79b5d9; }
+  #sky-courier-help {
+    position: fixed; left: 10px; bottom: 8px; color: #eaf6ff; font: 13px/1.5 system-ui, sans-serif;
+    text-shadow: 0 1px 3px rgba(0,0,0,.55); pointer-events: none; white-space: pre-line;
+  }
+</style>
+</head>
+<body>
+<canvas id="sky-courier-canvas" width="1280" height="720"></canvas>
+<div id="sky-courier-help">Sky Courier: Coral Run — deliver the island mail.
+Arrows / mouse steer · Shift/Ctrl throttle · C camera · Space drop parcel · R restart · P pause · M mute</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
